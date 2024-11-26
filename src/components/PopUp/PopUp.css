@@ -1,0 +1,36 @@
+.popup {
+  width: 500;
+  height: 100px;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #242424;
+  border: 1px solid #646cff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  animation: p-animation 4s ease-in-out;
+  font-size: 14px;
+  padding: 20px;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  filter: drop-shadow(0 0 2em #646cffaa);
+  border-radius: 5px;
+}
+
+@keyframes p-animation {
+  0% {
+    top: -10%;
+  }
+
+  25% {
+    top: 10%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
